@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -91,9 +92,22 @@ namespace LearnCS
 
             //white loop
             bool isTrue = true;
-            while (isTrue == true)
+            int Counter = 0;
+            while (isTrue)
             {
                 Console.WriteLine("Eternity");
+                if (Counter == 10)
+                {
+                    isTrue = false;
+                }
+                Counter++;
+            }
+            
+
+            // Foreach Loop
+            foreach (string car in cars)
+            {
+                Console.WriteLine($"Car: {car}");
             }
         }
     }
