@@ -11,6 +11,13 @@ namespace LearnCS
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            int a = 5, b = 2;
+            Console.WriteLine($"a + b = {a + b}");
+            //addition
+            /*jkjkjk
+             * klklkl
+             * klklklkl
+            */
         }
     }
 }
