@@ -18,6 +18,14 @@ namespace LearnCS
              * klklkl
              * klklklkl
             */
+            string[] cars = new string[3];
+            cars[0] = "Volvo";
+            cars[1] = "BMW";
+            cars[2] = "Ford";
+            Console.WriteLine($"First car : {cars[0]}");
+            Console.WriteLine($"Second car : {cars[1]}");
+            Console.WriteLine($"Third car : {cars[2]}");
+            // Arrays
         }
     }
 }
