@@ -18,6 +18,7 @@ namespace LearnCS
              * klklkl
              * klklklkl
             */
+            // Arrays
             string[] cars = new string[3];
             cars[0] = "Volvo";
             cars[1] = "BMW";
@@ -25,7 +26,75 @@ namespace LearnCS
             Console.WriteLine($"First car : {cars[0]}");
             Console.WriteLine($"Second car : {cars[1]}");
             Console.WriteLine($"Third car : {cars[2]}");
-            // Arrays
+            // List (Dynamic array)
+            List<int> numbers = new List<int>();
+            numbers.Add(64);
+            numbers.Add(128);
+            numbers.Add(256);
+            Console.WriteLine($"First number: {numbers[0]}");
+            Console.WriteLine($"Second number: {numbers[1]}");
+            Console.WriteLine($"Third number: {numbers[2]}");
+            numbers.Remove(128);
+            Console.WriteLine($"Second number: {numbers[1]}");
+            numbers.Add(100);
+            numbers[0] = numbers[1] + numbers[2];
+            Console.WriteLine($"First number: {numbers[0]}");
+            // Dictionary (Key-Value Paris)
+            Dictionary<string, float> products = new Dictionary<string, float>();
+            products.Add("Apple", 0.99f);
+            products.Add("Banana", 0.59f);
+            products.Add("Orange", 0.79f);
+            Console.WriteLine($"Apple: ${products["Apple"]}");
+            Console.WriteLine($"Banana: ${products["Banana"]}");
+            Console.WriteLine($"Orange: ${products["Orange"]}");
+
+            // If-Else Statement
+            if (a > b) Console.WriteLine("Alright");
+
+            if (products.Count > 10) Console.WriteLine("Products available:");
+            else Console.WriteLine("Products unavailable:");
+
+            int age = 15;
+            if (age >= 18) Console.WriteLine("You are an adult.");
+            else if (age >= 13) Console.WriteLine("You are a teenager.");
+            else Console.WriteLine("You are not a child.");
+
+            //Switch Statement
+            char grade = 'B';
+            switch (grade)
+            {
+                case 'A':
+                    Console.WriteLine("Excellent!");
+                    break;
+                case 'B':
+                    Console.WriteLine("Well done");
+                    break;
+                case 'C':
+                    Console.WriteLine("Good");
+                    break;
+                case 'D':
+                    Console.WriteLine("You passed");
+                    break;
+                case 'F':
+                    Console.WriteLine("Failed");
+                    break;
+                default:
+                    Console.WriteLine("invalid grade");
+                    break;
+
+            // For Loop
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"For loop iteration: {i}");
+            }
+
+            //white loop
+            bool isTrue = true;
+            while (isTrue == true)
+            {
+                Console.WriteLine("Eternity");
+            }
         }
     }
 }
