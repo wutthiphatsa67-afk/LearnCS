@@ -9,6 +9,7 @@ namespace LearnCS
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
@@ -83,14 +84,14 @@ namespace LearnCS
                     Console.WriteLine("invalid grade");
                     break;
 
-            // For Loop
+            //switch Condition
             }
             for (int i = 0; i < 5; i++)
             {
                 Console.WriteLine($"For loop iteration: {i}");
             }
 
-            //white loop
+            //For loop Condition
             bool isTrue = true;
             int Counter = 0;
             while (isTrue)
@@ -102,13 +103,32 @@ namespace LearnCS
                 }
                 Counter++;
             }
-            
 
-            // Foreach Loop
+            // while loop Condition
             foreach (string car in cars)
             {
                 Console.WriteLine($"Car: {car}");
             }
+            //foreach Condition
+
+            // function
+            string Hello(string name)
+            {
+                return $"Hello, {name}!";
+            }
+
+            /* string h = Hello("Alice");
+            Console.WriteLine(h); */
+
+            Console.WriteLine(Hello("Alice"));
+
+            void NumberCompare(int x, int y)
+            {
+                if (x > y) Console.WriteLine ($"{x} is greater than {y}");
+                else if (x < y) Console.WriteLine($"{x} is less than {y}");
+                else Console.WriteLine($"{x} is equal to {y}");
+            }
+            NumberCompare(5, 10);
         }
     }
 }
