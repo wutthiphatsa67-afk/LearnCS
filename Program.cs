@@ -121,6 +121,7 @@ namespace LearnCS
             Console.WriteLine(h); */
 
             Console.WriteLine(Hello("Alice"));
+            Console.WriteLine("ling");
 
             void NumberCompare(int x, int y)
             {
@@ -129,6 +130,47 @@ namespace LearnCS
                 else Console.WriteLine($"{x} is equal to {y}");
             }
             NumberCompare(5, 10);
+
+
+            List<Player> players = new List<Player>();
+
+            for (int i = 0; i < 3; i++)
+            {
+                players.Add(new Player());
+            }
+            players[0].Name = "Alice";
+            players[1].Name = "Bob";
+            players[2].Name = "Charlie";
+            players[0].Level = 10;
+            players[1].Level = 20;
+            players[2].Level = 30;
+
+            foreach (Player pl in players)
+                Console.WriteLine($"Player: {pl.Name}, Level: {pl.Level}");
         }
+    }
+    class Player
+    {
+        string name;
+        int level;
+
+        public string Name
+        {
+            get { return Name; }
+            set { Name = value; }
+        }
+
+        public int Level
+        {
+            get { return Level; }
+            set { Level = value; }
+        }
+        // Constructor
+        public Player(string name = "Unknown", int level = 1)
+        {
+            this.Name = name;
+            this.Level = level;
+        }
+
     }
 }
